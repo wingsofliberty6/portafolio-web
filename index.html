@@ -137,56 +137,68 @@
                         <!-- CONTENEDOR PRINCIPAL -->
                         <div class="container d-flex flex-row my-5 me-2">
                             <!-- Tira de videos (miniaturas) -->
-                            <div class="d-flex flex-column overflow-auto gap-2 p-4 bg-light rounded-2">
+                            <div class="d-flex flex-column overflow-auto gap-3 p-4 bg-light rounded-2" style="max-height: 500px;">
                                 <!-- Miniatura 1 -->
-                                <div class="d-flex flex-row align-items-left">
-                                    <video class="video-thumb me-2" src="../video/LEMNOS_ISLAND.mp4" width="150" onclick="changeVideo(this.src)"></video>
-                                    <div class="d-flex flex-column mt-2">
-                                        <h5 style="color: darkgoldenrod">LEMNOS ISLAND</h5>
-                                        <p>Cortometraje</p>
-                                    </div>   
+                                <div class="d-flex flex-row">
+                                    <img class="video-thumb me-2" src="thumbs/lemnos.jpg" width="150" 
+                                        onclick="changeVideo('63BQeuF_rOs')">
+                                    <div class="d-flex flex-column">
+                                    <h5 style="color: darkgoldenrod">LEMNOS ISLAND</h5>
+                                    <p>Cortometraje</p>
+                                    </div>
                                 </div>
+
                                 <!-- Miniatura 2 -->
-                                <div class="d-flex flex-row align-items-left">
-                                    <video class="video-thumb me-2" src="../video/REN.mp4" width="150" onclick="changeVideo(this.src)"></video>
-                                    <div class="d-flex flex-column mt-2">
-                                        <h5 style="color: darkgoldenrod">REN</h5>
-                                        <p>Cortometraje</p>
-                                    </div>    
+                                <div class="d-flex flex-row">
+                                    <img class="video-thumb me-2" src="thumbs/ren.jpg" width="150" 
+                                        onclick="changeVideo('sV2f3CA64TI')">
+                                    <div class="d-flex flex-column">
+                                    <h5 style="color: darkgoldenrod">REN</h5>
+                                    <p>Cortometraje</p>
+                                    </div>
                                 </div>
+
                                 <!-- Miniatura 3 -->
-                                <div class="d-flex flex-row align-items-left">
-                                    <video class="video-thumb me-2" src="../video/DEMO_REEL_2019.mp4" width="150" onclick="changeVideo(this.src)"></video>
-                                    <div class="d-flex flex-column mt-2">
-                                        <h5 style="color: darkgoldenrod">DEMO REEL 2021</h5>
-                                        <p>Portafolio</p>
-                                    </div>   
+                                <div class="d-flex flex-row">
+                                    <img class="video-thumb me-2" src="thumbs/demo.jpg" width="150" 
+                                        onclick="changeVideo('WXiQ6SQkcFI')">
+                                    <div class="d-flex flex-column">
+                                    <h5 style="color: darkgoldenrod">DEMO REEL 2021</h5>
+                                    <p>Portafolio</p>
+                                    </div>
                                 </div>
+
                                 <!-- Miniatura 4 -->
-                                <div class="d-flex flex-row align-items-left">
-                                    <video class="video-thumb me-2" src="../video/SRA_JUANI.mp4" width="150" onclick="changeVideo(this.src)"></video>
-                                    <div class="d-flex flex-column mt-2">
-                                        <h5 style="color: darkgoldenrod">TESTIMONIAL ETERNAL</h5>
-                                        <p>Video Testimonial</p>
-                                    </div>   
+                                <div class="d-flex flex-row">
+                                    <img class="video-thumb me-2" src="thumbs/demo.jpg" width="150" 
+                                        onclick="changeVideo('RVvDGqIjAmk')">
+                                    <div class="d-flex flex-column">
+                                    <h5 style="color: darkgoldenrod">PROTACTIC</h5>
+                                    <p>Instruccional. </p>
+                                    </div>
                                 </div>
+
                                 <!-- Miniatura 5 -->
-                                <div class="d-flex flex-row align-items-left">
-                                    <video class="video-thumb me-2" src="../video/PROTACTIC_M8_L4.mp4" width="150" onclick="changeVideo(this.src)"></video>
-                                    <div class="d-flex flex-column mt-2">
-                                        <h5 style="color: darkgoldenrod">PROTACTIC</h5>
-                                        <p>Instruccional con Avatar</p>
-                                    </div>   
+                                <div class="d-flex flex-row">
+                                    <img class="video-thumb me-2" src="thumbs/demo.jpg" width="150" 
+                                        onclick="changeVideo('1jzd86-K-ZA')">
+                                    <div class="d-flex flex-column">
+                                    <h5 style="color: darkgoldenrod">ETERNAL</h5>
+                                    <p>Video Testimonial</p>
+                                    </div>
                                 </div>
+                                <!-- Agrega más -->
                             </div>
 
                             <!-- Reproductor grande -->
-                            <div class="ratio ratio-16x9 mb-4 mx-5" style="max-width: 650px; height: 100%;">
-                                <video id="mainVideo" controls>
-                                    <source src="videos/video1.mp4" type="video/mp4">
-                                    Tu navegador no soporta video HTML5.
-                                </video>
+                            <div class="ratio ratio-16x9 mb-4 mx-5" style="max-width: 600px; height: 400px;">
+                                <iframe id="mainVideo" 
+                                    src="https://www.youtube.com/embed/63BQeuF_rOs"
+                                    title="Video YouTube"
+                                    allowfullscreen>
+                                </iframe>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -257,6 +269,12 @@
                 });
             });
         });
+    </script>
+    <script>
+        function changeVideo(videoId) {
+            const iframe = document.getElementById('mainVideo');
+            iframe.src = `https://www.youtube.com/embed/${videoId}`;
+        }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
