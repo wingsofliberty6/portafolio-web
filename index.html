@@ -135,7 +135,7 @@
                             </div>
                         </div>
                         <!-- CONTENEDOR PRINCIPAL -->
-                        <div class="container d-flex flex-row my-5 me-2">
+                        <div class="container d-flex flex-row my-5 me-1">
                             <!-- Tira de videos (miniaturas) -->
                             <div class="d-flex flex-column overflow-auto gap-3 p-4 bg-light rounded-2" style="max-height: 500px;">
                                 <!-- Miniatura 1 -->
@@ -167,6 +167,19 @@
                                 <!-- Miniatura 3 -->
                                 <div class="d-flex flex-row">
                                     <img class="video-thumb me-2"
+                                        src="https://img.youtube.com/vi/1jzd86-K-ZA/0.jpg"
+                                        style="width: 150px; height: 84px; object-fit: cover;"
+                                        onclick="changeVideo('1jzd86-K-ZA')">
+                                    </img>
+                                    <div class="d-flex flex-column">
+                                        <h5 style="color: darkgoldenrod">ETERNAL</h5>
+                                        <p>Video Testimonial</p>
+                                    </div>
+                                </div>
+
+                                <!-- Miniatura 4 -->
+                                <div class="d-flex flex-row">
+                                    <img class="video-thumb me-2"
                                         src="https://img.youtube.com/vi/WXiQ6SQkcFI/0.jpg"
                                         style="width: 150px; height: 84px; object-fit: cover;"
                                         onclick="changeVideo('WXiQ6SQkcFI')">
@@ -177,7 +190,7 @@
                                     </div>
                                 </div>
 
-                                <!-- Miniatura 4 -->
+                                <!-- Miniatura 5 -->
                                 <div class="d-flex flex-row">
                                     <img class="video-thumb me-2"
                                         src="https://img.youtube.com/vi/RVvDGqIjAmk/0.jpg"
@@ -189,31 +202,17 @@
                                         <p>Instruccional. </p>
                                     </div>
                                 </div>
-
-                                <!-- Miniatura 5 -->
-                                <div class="d-flex flex-row">
-                                    <img class="video-thumb me-2"
-                                        src="https://img.youtube.com/vi/1jzd86-K-ZA/0.jpg"
-                                        style="width: 150px; height: 84px; object-fit: cover;"
-                                        onclick="changeVideo('1jzd86-K-ZA')">
-                                    </img>
-                                    <div class="d-flex flex-column">
-                                        <h5 style="color: darkgoldenrod">ETERNAL</h5>
-                                        <p>Video Testimonial</p>
-                                    </div>
-                                </div>
                                 <!-- Agrega más -->
                             </div>
 
                             <!-- Reproductor grande -->
-                            <div class="ratio ratio-16x9 mb-4 mx-5" style="max-width: 600px; height: 400px;">
-                                <iframe id="mainVideo" 
+                            <div class="ratio ratio-16x9 my-4 mx-5" style="max-height: 360px; width: 640px;">
+                                <iframe id="mainVideo"
                                     src="https://www.youtube.com/embed/63BQeuF_rOs"
                                     title="Video YouTube"
                                     allowfullscreen>
                                 </iframe>
                             </div>
-
                         </div>
                     </div>
                 </div>
