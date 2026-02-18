@@ -10,9 +10,25 @@
     border-color: #212529;
 }
 
+/* Evita que el texto de las pestañas se rompa en varias líneas */
+.nav-link h5 {
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+/* Oculta la barra de scroll estética pero permite la funcionalidad */
+.custom-scrollbar::-webkit-scrollbar {
+    height: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: darkgoldenrod;
+    border-radius: 10px;
+}
+
 .tab-content {
-    height: 700px; /* Ajusta al tamaño de tu contenido */
-    position: relative;
+    width: 100%;
+    min-height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+    height: auto !important;
 }
 
 .slide-pane {
@@ -82,6 +98,17 @@
 /* Ajuste para el modal de imagen para que no pegue a los bordes */
 #modalImageDisplay {
     max-height: 85vh;
+}
+
+/* Optimización para tablets y móviles */
+@media (max-width: 768px) {
+    .display-3 {
+        font-size: 2.5rem; /* Títulos más pequeños en móvil */
+    }
+    .image-gallery, .video-gallery {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 /* @keyframes scrollText {

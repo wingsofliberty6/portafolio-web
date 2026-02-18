@@ -37,7 +37,7 @@
             </h1>
             <!-- Para móvil (menor a md) -->
             <h1 class="text-dark m-0 px-3 fs-4 fs-md-2 d-block d-md-none">
-                · SUEÑA · SUEÑA · SUEÑA ·
+                SUEÑA · SUEÑA · SUEÑA · SUEÑA · SUEÑA
             </h1>
         </div>
         <!-- COVER -->
@@ -55,21 +55,23 @@
             </div>
         </div>
         <!--MENU DE NAVEGACIÓN-->
-        <div class="container-fluid d-flex bg-dark text-light">
-            <ul class="nav nav-tabs" id="tabMenu" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link bg-gray-100 active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab"><h5>VIDEOS</h5></button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link bg-gray-100" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab"><h5>DISEÑO GRÁFICO</h5></button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link bg-gray-100" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab"><h5>PROYECTOS</h5></button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link bg-gray-100" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab"><h5>WEB DEV</h5></button>
-                </li>
-            </ul>
+        <div class="container-fluid bg-dark border-bottom border-secondary">
+            <div class="d-flex flex-nowrap overflow-x-auto custom-scrollbar">
+                <ul class="nav nav-tabs border-0 flex-nowrap" id="tabMenu" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link bg-gray-100 active text-nowrap" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab"><h5>VIDEOS</h5></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link bg-gray-100 text-nowrap" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab"><h5>DISEÑO GRÁFICO</h5></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link bg-gray-100 text-nowrap" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab"><h5>PROYECTOS</h5></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link bg-gray-100 text-nowrap" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab"><h5>WEB DEV</h5></button>
+                    </li>
+                </ul>
+            </div>
         </div>
         <!--TABS-->
         <div class="tab-content position-relative overflow-hidden" 
@@ -221,7 +223,7 @@
                                             src="image/retazo-vivo.jpg" 
                                             onclick="openDesignModal(this.src, 
                                             'Retazo vivo', 
-                                            'Retazo Vivo es el proyecto emprendedir de Zitlali Villamil, enfocado en Upcycling y Moda Sustentable. En el participo como productor de contenidos y diseñador gráfico.'
+                                            'Retazo Vivo es el proyecto emprendedor de Zitlali Villamil, enfocado en Upcycling y Moda Sustentable. En el participo como productor de contenidos y diseñador gráfico.'
                                             )">
                                     </div>
                                 </div>
@@ -253,7 +255,7 @@
                 <div class="tab-pane slide-pane" id="tab4" role="tabpanel">
                     <h4 class="text-light">WEB DEV</h4>
                     <h5 class="text-light">Coming soon</h5>
-                </div>
+            </div>
         </div>
         <!--BANNER-->
         <div class="banner container-fluid d-flex justify-content-center align-items-center bg-black"
@@ -352,7 +354,7 @@
     </div>
     <div class="modal fade" id="designModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content bg-dark text-light">
+            <div class="modal-content bg-dark bg-opacity-75 text-light">
                 <div class="modal-header border-0">
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
