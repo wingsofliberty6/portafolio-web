@@ -1,0 +1,90 @@
+.nav-tabs .nav-link.active {
+    background-color: goldenrod !important;
+    color: #212529 !important;
+    border-color:#212529;
+}
+
+.nav-tabs .nav-link {
+    background-color: #212529!important;
+    color: goldenrod !important;
+    border-color: #212529;
+}
+
+.tab-content {
+    height: 700px; /* Ajusta al tamaño de tu contenido */
+    position: relative;
+}
+
+.slide-pane {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    z-index: 0;
+}
+
+.slide-pane.active {
+    left: 0;
+    opacity: 1;
+    z-index: 1;
+}
+
+.banner h1 {
+    white-space: nowrap;
+    animation: scrollText 5s linear infinite;
+}
+
+.video-thumb {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.video-title {
+    color: darkgoldenrod;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    /* Evita que títulos largos rompan la cuadrícula */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.video-card {
+    background: rgba(233, 233, 233);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.video-card:hover {
+    transform: scale(1.08);
+}
+
+/* Estilo para las imágenes de la cuadrícula */
+.img-portfolio {
+    aspect-ratio: 4 / 3; /* Esto fuerza el ratio 4x3 que pediste */
+    object-fit: cover;   /* Recorta la imagen para que llene el espacio sin deformarse */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.img-portfolio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* Ajuste para el modal de imagen para que no pegue a los bordes */
+#modalImageDisplay {
+    max-height: 85vh;
+}
+
+/* @keyframes scrollText {
+from { transform: translateX(0); }
+to { transform: translateX(-50.2%); }
+} */
