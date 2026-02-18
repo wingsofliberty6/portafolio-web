@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <div class="d-flex pt-4 align-items-center justify-content-center bg-black text-light">
+        <div class="d-flex py-4 align-items-center justify-content-center bg-black text-light">
             <h4 style="color: darkgoldenrod">Portafolio Web y CV</h4>
         </div>
     </header>
@@ -37,7 +37,7 @@
             </h1>
             <!-- Para móvil (menor a md) -->
             <h1 class="text-dark m-0 px-3 fs-4 fs-md-2 d-block d-md-none">
-                SUEÑA · SUEÑA · SUEÑA · SUEÑA · SUEÑA
+                SUEÑA · SUEÑA · SUEÑA
             </h1>
         </div>
         <!-- COVER -->
@@ -55,41 +55,39 @@
             </div>
         </div>
         <!--MENU DE NAVEGACIÓN-->
-        <div class="container-fluid bg-dark border-bottom border-secondary">
-            <div class="d-flex flex-nowrap overflow-x-auto custom-scrollbar">
-                <ul class="nav nav-tabs border-0 flex-nowrap" id="tabMenu" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link bg-gray-100 active text-nowrap" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab"><h5>VIDEOS</h5></button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link bg-gray-100 text-nowrap" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab"><h5>DISEÑO GRÁFICO</h5></button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link bg-gray-100 text-nowrap" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab"><h5>PROYECTOS</h5></button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link bg-gray-100 text-nowrap" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab"><h5>WEB DEV</h5></button>
-                    </li>
-                </ul>
-            </div>
+        <div class="container-fluid d-flex bg-dark text-light">
+            <ul class="nav nav-tabs" id="tabMenu" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link bg-gray-100 active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab"><h5>VIDEOS</h5></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link bg-gray-100" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab"><h5>DISEÑO GRÁFICO</h5></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link bg-gray-100" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab"><h5>PROYECTOS</h5></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link bg-gray-100" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab"><h5>WEB DEV</h5></button>
+                </li>
+            </ul>
         </div>
         <!--TABS-->
-        <div class="tab-content position-relative overflow-hidden" 
+        <div class="tab-content position-relative" 
         style="background-image: url('image/back-image.jpg'); background-size: cover; background-position: center;">
         <!-- Overlay oscuro -->
             <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.65);"></div> 
                 <!-- Tab 1: Videos -->
                 <div class="tab-pane slide-pane active" id="tab1" role="tabpanel">
                     <div class="video-gallery container-fluid pt-4">    
-                        <div class="row justify-content-center mb-1">
-                            <div class="col-md-8 text-center mb-1">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 text-center">
                                 <h1 class="display-3 fw-bold text-warning">CARRETE DE VIDEOS</h1>
                             </div>
                         </div>
                         <!-- CONTENEDOR -->
-                        <div class="container my-5">
-                            <div class="row g-4 justify-content-center">
-                                <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="container mt-5">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3">
                                     <div class="video-card" onclick="changeVideo('1c1VsTNppKQ')">
                                         <img class="video-thumb w-100" src="image/Demo_2025.png" alt="Demo Reel 2025">
                                         <div class="mt-2">
@@ -98,7 +96,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3">
                                     <div class="video-card" onclick="changeVideo('63BQeuF_rOs')">
                                         <img class="video-thumb w-100" src="image/Lemnos Island Portada.png" alt="Lemnos Island">
                                         <div class="mt-2">
@@ -107,7 +105,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3">
                                     <div class="video-card" onclick="changeVideo('59hLrJaO224')">
                                         <img class="video-thumb w-100" src="https://img.youtube.com/vi/59hLrJaO224/0.jpg" alt="La Culpa Testigo">
                                         <div class="mt-2">
@@ -116,7 +114,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3">
                                     <div class="video-card" onclick="changeVideo('sV2f3CA64TI')">
                                         <img class="video-thumb w-100" src="image/REN Portada.png" alt="REN">
                                         <div class="mt-2">
@@ -125,7 +123,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3">
                                     <div class="video-card" onclick="changeVideo('1jzd86-K-ZA')">
                                         <img class="video-thumb w-100" src="https://img.youtube.com/vi/1jzd86-K-ZA/0.jpg" alt="Eternal">
                                         <div class="mt-2">
@@ -134,7 +132,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3">
                                     <div class="video-card" onclick="changeVideo('WXiQ6SQkcFI')">
                                         <img class="video-thumb w-100" src="image/Demo_2021.png" alt="Demo Reel 2021">
                                         <div class="mt-2">
@@ -143,7 +141,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3">
                                     <div class="video-card" onclick="changeVideo('RVvDGqIjAmk')">
                                         <img class="video-thumb w-100" src="https://img.youtube.com/vi/RVvDGqIjAmk/0.jpg" alt="Protactic">
                                         <div class="mt-2">
@@ -151,10 +149,7 @@
                                             <p class="text-secondary small">Instruccional</p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-lg-3 d-flex align-items-center justify-content-center border border-secondary rounded-2">
-                                    <p class="text-muted">Próximamente</p>
-                                </div>
+                                </div>                
                             </div>
                         </div>
                     </div>
@@ -258,7 +253,7 @@
             </div>
         </div>
         <!--BANNER-->
-        <div class="banner container-fluid d-flex justify-content-center align-items-center bg-black"
+        <div class="banner container-fluid d-flex justify-content-center align-items-center bg-black py-3"
         style="height: 80px;">
             <!-- Para escritorio (md en adelante) -->
             <h1 class="text-dark m-0 px-3 fs-4 fs-md-2 d-none d-md-block">
@@ -267,7 +262,7 @@
             </h1>
             <!-- Para móvil (menor a md) -->
             <h1 class="text-dark m-0 px-3 fs-4 fs-md-2 d-block d-md-none">
-                · CREA · CREA · CREA ·
+                CREA · CREA · CREA
             </h1>
         </div>
         <!--ACERCA DE MI-->
@@ -296,7 +291,7 @@
         </div>
     </main>
     <footer>
-        <div class="d-flex flex-row p-5 align-items-center bg-dark text-light">
+        <div class="d-flex flex-row p-3 align-items-center bg-dark text-light">
             <div class="flex-fill text-align-left ms-3">
                 <h5>DATOS DE CONTACTO</h5>
                 <div class="d-flex mt-3 ms-3 flex-column">
@@ -354,7 +349,7 @@
     </div>
     <div class="modal fade" id="designModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content bg-dark bg-opacity-75 text-light">
+            <div class="modal-content bg-dark text-light">
                 <div class="modal-header border-0">
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
@@ -365,7 +360,7 @@
                         </div>
                         <div class="col-md-6 px-4">
                             <h2 id="designModalTitle" class="text-warning fw-bold mb-3"></h2>
-                            <div id="designModalBody" class="text-secondary" style="font-size: 0.95rem; line-height: 1.6;">
+                            <div id="designModalBody" class="text-w" style="font-size: 0.95rem; line-height: 1.6;">
                             </div>
                         </div>
                     </div>
